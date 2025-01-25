@@ -1,6 +1,7 @@
-.parent{
+body{
     display: grid;
     grid-template: auto 1fr auto / auto 1fr auto;
+    height: 100vh
 }
 
 header{
@@ -9,20 +10,28 @@ header{
     background-color: aqua;
 }
 
-.left-side{
+.left-sidebar{
     grid-column: 1 / 2;
     background: lightgray;
 }
 
-.main{
+main{
     grid-column: 2 / 3;
+    background: lightpink;
 }
 
-.right-side{
+.right-sidebar{
     grid-column: 3 / 4;
+    background: rgb(48, 151, 67);
+}
+
+.left-sidebar,
+.right-sidebar {
+  padding: 1rem;
 }
 
 footer{
     padding: 2rem;
     grid-column: 1 /4;
+    background: lightseagreen;
 }
